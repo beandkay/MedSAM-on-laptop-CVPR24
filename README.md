@@ -1,5 +1,21 @@
-# LiteMedSAM
+# OneSAM for Med SAM on laptop @ CVPR 2024
 
+# Environments and Requirements
+We used the system of 2 NVIDIA RTX 6000 for training.
+
+# Dataset and Models
+Following all the step from LiteMedSAM for extracting data and config the work dir.
+
+# Preprocessing
+Instead of extracting only one mask per GT image, we extract all available masks per GT image -> increase the training sizes, and cover the missing cases.
+
+# Training
+Following all the step from the LiteMedSAM tutorial.
+
+# Inference
+Place the checkpoint into ckpt folder and modify the path in the inference file. Then run as normal as LiteMedSAM.
+
+---
 A lightweight version of MedSAM for fast training and inference. The model was trained with the following two states:
 
 - Stage 1. Distill a lightweight image encoder `TinyViT` from the MedSAM image encoder `ViT` by imposing the image embedding outputs to be the same
