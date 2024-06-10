@@ -1,0 +1,13 @@
+*.md
+!README.md
+*.npz
+*.csv
+.git
+**/test_demo
+test_demo
+work_dir
+work_dir_ddp
+seg-val
+overlay
+*.zip
+*.tar.gz
